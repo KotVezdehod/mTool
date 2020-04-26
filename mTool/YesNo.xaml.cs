@@ -23,6 +23,8 @@ namespace mTool
         {
             InitializeComponent();
             this.Question.Text = Capt;
+            this.Topmost = true;
+            this.ShowInTaskbar = false;
         }
        
         private void No_Click(object sender, RoutedEventArgs e)

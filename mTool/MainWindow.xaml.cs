@@ -40,7 +40,7 @@ namespace mTool
             
                 if (yn.ReturnValue)
                 {
-                    //System.Diagnostics.Process.Start("Shutdown.exe", "-l");
+                    System.Diagnostics.Process.Start("Shutdown.exe", "-l");
                 }
 
           }

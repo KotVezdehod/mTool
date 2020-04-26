@@ -11,25 +11,47 @@ namespace tKiller
 {
     class Program
     {
+        static CancellationTokenSource cancelTokenSource = new CancellationTokenSource();
+        static CancellationToken token = cancelTokenSource.Token;
+
         static void Main(string[] args)
         {
             string UserName = GetUserName();
+
+            
 
             Task.Factory.StartNew(new Action(()=> 
             {
                 using (NamedPipeClientStream np_client = new NamedPipeClientStream(UserName))
                 {
-                    using (StreamWriter sr = new StreamWriter(np_client))
+                    try
                     {
                         np_client.Connect(2000);
-                        sr.WriteLine("");
+                        using (StreamWriter sr = new StreamWriter(np_client))
+                        {
+
+                            sr.WriteLine("");
+                           
+                        }
+
+                    }
+                    catch
+                    {
                     }
                 }
 
-                Environment.Exit(0);
+                cancelTokenSource.Cancel();
             }));
 
-            Console.ReadLine();
+            for (int i = 0; i < 5; i++)
+            {
+                if (token.IsCancellationRequested)
+                {
+                    Environment.Exit(0);
+                }
+                Thread.Sleep(1000);
+            }
+            Environment.Exit(0);
         }
 
 

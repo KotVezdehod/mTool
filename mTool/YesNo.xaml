@@ -4,8 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:mTool"
-        mc:Ignorable="d" Height="80" Width="200"
-        WindowStyle="None" AllowsTransparency="True">
+        mc:Ignorable="d" Height="150" Width="400"
+        WindowStyle="None" AllowsTransparency="True" MouseLeftButtonDown ="DragWindow">
     <!--<WindowChrome.WindowChrome>
         <WindowChrome     
         CaptionHeight="1"  
@@ -15,9 +15,9 @@
         </WindowChrome>
     </WindowChrome.WindowChrome>-->
     <Window.Background>
-        <SolidColorBrush Opacity="0.5" Color="White"/>
+        <SolidColorBrush Opacity="0.8" Color="Khaki"/>
     </Window.Background>
-    <Border Background="#50FFFFFF" BorderThickness="2,0,2,2" MouseLeftButtonDown="DragWindow">
+    <Border Background="#50FFFFFF" BorderThickness="2,10,2,2">
         <Grid>
             <Grid.RowDefinitions>
                 <!--<RowDefinition Height="30" />-->

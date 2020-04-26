@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mTool", "mTool\mTool.csproj", "{42C80EB5-2428-4219-BA3D-E6BDB3339032}"
 EndProject
@@ -29,8 +29,8 @@ Global
 		{C9C64E7F-1AD7-495C-B20F-A8C29A368890}.Debug|x86.Build.0 = Debug|Any CPU
 		{C9C64E7F-1AD7-495C-B20F-A8C29A368890}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9C64E7F-1AD7-495C-B20F-A8C29A368890}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C9C64E7F-1AD7-495C-B20F-A8C29A368890}.Release|x86.ActiveCfg = Release|Any CPU
-		{C9C64E7F-1AD7-495C-B20F-A8C29A368890}.Release|x86.Build.0 = Release|Any CPU
+		{C9C64E7F-1AD7-495C-B20F-A8C29A368890}.Release|x86.ActiveCfg = Release|x86
+		{C9C64E7F-1AD7-495C-B20F-A8C29A368890}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
